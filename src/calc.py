@@ -1,11 +1,11 @@
-"""
-Module with some functions
+"""Module with some functions.
+
+This module have two simple functions
 """
 
 
 def new_add(arg_1, arg_2):
-    """
-    Compute sum of two numbers.
+    """Compute sum of two numbers.
 
     Parameters
     ----------
@@ -23,8 +23,7 @@ def new_add(arg_1, arg_2):
 
 
 def new_pow(arg_1, arg_2):
-    """
-    Compute pow of two numbers.
+    """Compute pow of two numbers.
 
     Parameters
     ----------
