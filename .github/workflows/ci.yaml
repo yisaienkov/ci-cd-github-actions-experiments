@@ -30,7 +30,7 @@ jobs:
     - name: Run Flake8
       run: python -m flake8
     - name: Run mypy
-      run: python -m mypy .
+      run: python -m mypy src/
 
   check_code_formatting:
     name: Check code formatting with Black
