@@ -1,4 +1,6 @@
-"""Module with some functions."""
+"""
+Module with some functions
+"""
 
 
 def new_add(arg_1, arg_2):
@@ -35,6 +37,5 @@ def new_pow(arg_1, arg_2):
     -------
     int
         Pow
-
     """
     return arg_1 ** arg_2
