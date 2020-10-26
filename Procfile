@@ -1,1 +1,1 @@
-web gunicorn --pythonpath src app:app
+web: sh setup.sh && streamlit run src/app.py
