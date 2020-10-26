@@ -16,7 +16,6 @@ def new_add(arg_1, arg_2):
     -------
     int
         Sum of two args
-
     """
     return arg_1 + arg_2
 
