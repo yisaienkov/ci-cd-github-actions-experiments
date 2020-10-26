@@ -44,4 +44,11 @@ def new_pow(arg_1, arg_2):
 
 
 def get_dict():
-    return {"a": 1020, "b": 3040, "c": 5060, "d": 0, "e": 1111111111}
+    return {
+        "abc": 1020,
+        "bcd": 3040,
+        "ced": 5060,
+        "dfg": 0,
+        "eas": 1111111111,
+        "wdd": 5567,
+    }
