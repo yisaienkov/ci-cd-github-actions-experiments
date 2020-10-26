@@ -11,7 +11,6 @@ repos:
     - flake8-bugbear==20.1.4
     - flake8-builtins==1.5.2
     - flake8-comprehensions==3.2.2
-    - flake8-docstrings==1.5.0
     - flake8-tidy-imports==4.1.0
     - flake8==3.7.9
 - repo: https://github.com/pre-commit/pre-commit-hooks
