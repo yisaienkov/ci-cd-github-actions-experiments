@@ -1,4 +1,4 @@
-name: CI
+name: HEROKU_DEPLOY_PIPELINE
 on:
   push:
     branches:
@@ -44,3 +44,11 @@ jobs:
       run: mypy src/
     - name: Run Tests
       run: python -m pytest
+    - name: Deploy to Heroku
+      env:
+        HERUKU_API_TOKEN: ${{ secrets.HERUKU_API_TOKEN }}
+        HERUKU_APP_NAME: ${{ secrets.HERUKU_APP_NAME }}
+      if: github.ref == 'refs/heads/master' && job.status == 'success'
+      run: |
+        git remote add heroku https://heroku:$HERUKU_API_TOKEN@git.heroku.com/$HERUKU_APP_NAME.git
+        git push heroku HEAD:master -f
